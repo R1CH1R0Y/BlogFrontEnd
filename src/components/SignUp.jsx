@@ -13,6 +13,7 @@ const SignUp = () => {
             let newInput={ "name" :input.name,"phone":input.phone,"email":input.email,"password":input.password }
             axios.post("http://localhost:3030/signup",newInput).then(
                 (response)=>{
+                    console.log(response.data)
                     if (response.data.status=="success") {
                         alert("Registered successfully!")
                         setInput({ "name" : "","phone":"","email":"","password":"","cpswd":"" })
@@ -65,7 +66,7 @@ const SignUp = () => {
                                         <button className="btn btn-success" onClick={readValue}>Sign Up</button>
                                     </div>
                                     <div className="col col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
-                                        <a href="" className="btn btn-primary">Log In</a>
+                                        <a href="/" className="btn btn-primary">Back to Log In</a>
                                     </div>
                                 </div>
                             </div>
