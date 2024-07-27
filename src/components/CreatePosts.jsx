@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavBar from './NavBar'
 
 const CreatePosts = () => {
   const [input,setInput]=new useState(
@@ -13,6 +14,7 @@ const CreatePosts = () => {
       headers:{"token":sessionStorage.getItem("token"),"Content-Type":"application/json"}
   }).then(
     (response)=>{
+      console.log(response.data)
       if (response.data.status=="success") {
         alert("Posted Successfully!!")
       } else {
@@ -27,6 +29,7 @@ const CreatePosts = () => {
   }
   return (
     <div>
+      <NavBar />
       <div class="card text-center mb-3">
         <div class="card-body">
           <h5 class="card-title">Create your Post</h5>
