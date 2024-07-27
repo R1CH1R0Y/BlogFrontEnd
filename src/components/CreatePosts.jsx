@@ -30,6 +30,8 @@ const CreatePosts = () => {
   return (
     <div>
       <NavBar />
+      <br />
+      <br />
       <div class="card text-center mb-3">
         <div class="card-body">
           <h5 class="card-title">Create your Post</h5>

@@ -17,7 +17,7 @@ const NavBar = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="/createposts">  Create your Post  </a>
+                            <a class="nav-link active" aria-current="page" href="/createposts">  Create Post  </a>
                             <a class="nav-link active" href="/viewall">  View All Posts  </a>
                             <a class="nav-link active" href="/myposts">  My Posts </a>
                             <button className="btn btn-danger" onClick={LogOut}>  Log Out  </button>
